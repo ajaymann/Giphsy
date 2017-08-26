@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33E9503246F66FA4D92517C7 /* Pods_Giphsy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45808A5B4448DE49C41D2272 /* Pods_Giphsy.framework */; };
 		C6C8888D1F5152F30063BC76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C8888C1F5152F30063BC76 /* AppDelegate.swift */; };
 		C6C8888F1F5152F30063BC76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C8888E1F5152F30063BC76 /* ViewController.swift */; };
 		C6C888921F5152F30063BC76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C888901F5152F30063BC76 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45808A5B4448DE49C41D2272 /* Pods_Giphsy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Giphsy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F9390A752895FACBF208194 /* Pods-Giphsy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Giphsy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Giphsy/Pods-Giphsy.release.xcconfig"; sourceTree = "<group>"; };
 		C6C888891F5152F30063BC76 /* Giphsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giphsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C8888C1F5152F30063BC76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6C8888E1F5152F30063BC76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		C6C888931F5152F30063BC76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6C888961F5152F30063BC76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6C888981F5152F30063BC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E16D47AE1E0A7A457C44FCBF /* Pods-Giphsy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Giphsy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Giphsy/Pods-Giphsy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33E9503246F66FA4D92517C7 /* Pods_Giphsy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E7AA4FAA9709ED538427FAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45808A5B4448DE49C41D2272 /* Pods_Giphsy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C6C888801F5152F20063BC76 = {
 			isa = PBXGroup;
 			children = (
 				C6C8888B1F5152F30063BC76 /* Giphsy */,
 				C6C8888A1F5152F30063BC76 /* Products */,
+				FA554D3D24DD40211F0FE477 /* Pods */,
+				7E7AA4FAA9709ED538427FAC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = Giphsy;
 			sourceTree = "<group>";
 		};
+		FA554D3D24DD40211F0FE477 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E16D47AE1E0A7A457C44FCBF /* Pods-Giphsy.debug.xcconfig */,
+				7F9390A752895FACBF208194 /* Pods-Giphsy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C6C8889B1F5152F30063BC76 /* Build configuration list for PBXNativeTarget "Giphsy" */;
 			buildPhases = (
+				04AC563A539FCFE02CBA3B24 /* [CP] Check Pods Manifest.lock */,
 				C6C888851F5152F20063BC76 /* Sources */,
 				C6C888861F5152F20063BC76 /* Frameworks */,
 				C6C888871F5152F20063BC76 /* Resources */,
+				AF28F1AAE63235E9CB341FF8 /* [CP] Embed Pods Frameworks */,
+				3D018AC347800406DD8E0AA3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04AC563A539FCFE02CBA3B24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3D018AC347800406DD8E0AA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Giphsy/Pods-Giphsy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF28F1AAE63235E9CB341FF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Giphsy/Pods-Giphsy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C6C888851F5152F20063BC76 /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		C6C8889C1F5152F30063BC76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E16D47AE1E0A7A457C44FCBF /* Pods-Giphsy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A26X592M5J;
@@ -274,6 +350,7 @@
 		};
 		C6C8889D1F5152F30063BC76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F9390A752895FACBF208194 /* Pods-Giphsy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A26X592M5J;
